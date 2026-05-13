@@ -29,17 +29,17 @@
             --text-primary: #1a1a2e;
             --text-secondary: #5a5a72;
             --text-muted: #8e8ea0;
-            --accent-blue: #2563eb;
-            --accent-blue-light: #3b82f6;
-            --accent-blue-glow: rgba(37, 99, 235, 0.08);
-            --accent-purple: #7c3aed;
-            --accent-purple-light: #8b5cf6;
-            --accent-purple-glow: rgba(124, 58, 237, 0.08);
-            --accent-green: #059669;
-            --accent-green-glow: rgba(5, 150, 105, 0.08);
-            --gradient-blue: linear-gradient(135deg, #2563eb, #3b82f6);
-            --gradient-purple: linear-gradient(135deg, #7c3aed, #8b5cf6);
-            --gradient-hero: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #6366f1 100%);
+            --accent-blue: #38bdf8;
+            --accent-blue-light: #7dd3fc;
+            --accent-blue-glow: rgba(56, 189, 248, 0.08);
+            --accent-purple: #fb7185;
+            --accent-purple-light: #fda4af;
+            --accent-purple-glow: rgba(251, 113, 133, 0.08);
+            --accent-green: #34d399;
+            --accent-green-glow: rgba(52, 211, 153, 0.08);
+            --gradient-blue: linear-gradient(135deg, #38bdf8, #7dd3fc);
+            --gradient-purple: linear-gradient(135deg, #fb7185, #fda4af);
+            --gradient-hero: linear-gradient(135deg, #38bdf8 0%, #fb7185 50%, #34d399 100%);
             --border: rgba(0, 0, 0, 0.06);
             --border-hover: rgba(0, 0, 0, 0.12);
             --radius: 16px;
@@ -168,7 +168,7 @@
             transform: translateX(-50%);
             width: 800px;
             height: 800px;
-            background: radial-gradient(circle, rgba(37, 99, 235, 0.06) 0%, rgba(124, 58, 237, 0.03) 50%, transparent 70%);
+            background: radial-gradient(circle, rgba(56, 189, 248, 0.06) 0%, rgba(251, 113, 133, 0.03) 50%, transparent 70%);
             border-radius: 50%;
         }
 
@@ -179,7 +179,7 @@
             right: -10%;
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(124, 58, 237, 0.04) 0%, transparent 60%);
+            background: radial-gradient(circle, rgba(251, 113, 133, 0.04) 0%, transparent 60%);
             border-radius: 50%;
         }
 
@@ -195,8 +195,8 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(37, 99, 235, 0.06);
-            border: 1px solid rgba(37, 99, 235, 0.15);
+            background: rgba(56, 189, 248, 0.06);
+            border: 1px solid rgba(56, 189, 248, 0.15);
             border-radius: 100px;
             padding: 8px 20px;
             font-size: 0.85rem;
@@ -266,33 +266,33 @@
         .btn-primary {
             background: var(--gradient-blue);
             color: #fff;
-            box-shadow: 0 4px 16px rgba(37, 99, 235, 0.25);
+            box-shadow: 0 4px 16px rgba(56, 189, 248, 0.25);
         }
 
         .btn-primary:hover {
-            box-shadow: 0 6px 24px rgba(37, 99, 235, 0.35);
+            box-shadow: 0 6px 24px rgba(56, 189, 248, 0.35);
             transform: translateY(-2px);
         }
 
         .btn-secondary {
             background: var(--gradient-purple);
             color: #fff;
-            box-shadow: 0 4px 16px rgba(124, 58, 237, 0.25);
+            box-shadow: 0 4px 16px rgba(251, 113, 133, 0.25);
         }
 
         .btn-secondary:hover {
-            box-shadow: 0 6px 24px rgba(124, 58, 237, 0.35);
+            box-shadow: 0 6px 24px rgba(251, 113, 133, 0.35);
             transform: translateY(-2px);
         }
 
         .btn-tertiary {
-            background: linear-gradient(135deg, #059669, #10b981);
+            background: linear-gradient(135deg, #34d399, #6ee7b7);
             color: #fff;
-            box-shadow: 0 4px 16px rgba(5, 150, 105, 0.25);
+            box-shadow: 0 4px 16px rgba(52, 211, 153, 0.25);
         }
 
         .btn-tertiary:hover {
-            box-shadow: 0 6px 24px rgba(5, 150, 105, 0.35);
+            box-shadow: 0 6px 24px rgba(52, 211, 153, 0.35);
             transform: translateY(-2px);
         }
 
@@ -387,17 +387,17 @@
 
         .product-icon.blue {
             background: var(--accent-blue-glow);
-            border: 1px solid rgba(37, 99, 235, 0.12);
+            border: 1px solid rgba(56, 189, 248, 0.12);
         }
 
         .product-icon.purple {
             background: var(--accent-purple-glow);
-            border: 1px solid rgba(124, 58, 237, 0.12);
+            border: 1px solid rgba(251, 113, 133, 0.12);
         }
 
         .product-icon.green {
             background: var(--accent-green-glow);
-            border: 1px solid rgba(5, 150, 105, 0.12);
+            border: 1px solid rgba(52, 211, 153, 0.12);
             font-size: 1.6rem;
         }
 
@@ -414,21 +414,21 @@
         }
 
         .pricing-badge.free {
-            background: rgba(5, 150, 105, 0.08);
+            background: rgba(52, 211, 153, 0.08);
             color: var(--accent-green);
-            border: 1px solid rgba(5, 150, 105, 0.15);
+            border: 1px solid rgba(52, 211, 153, 0.15);
         }
 
         .pricing-badge.paid {
-            background: rgba(124, 58, 237, 0.08);
+            background: rgba(251, 113, 133, 0.08);
             color: var(--accent-purple);
-            border: 1px solid rgba(124, 58, 237, 0.15);
+            border: 1px solid rgba(251, 113, 133, 0.15);
         }
 
         .pricing-badge.paid-green {
-            background: rgba(5, 150, 105, 0.08);
+            background: rgba(52, 211, 153, 0.08);
             color: var(--accent-green);
-            border: 1px solid rgba(5, 150, 105, 0.15);
+            border: 1px solid rgba(52, 211, 153, 0.15);
         }
 
         .pricing-note {
@@ -480,8 +480,8 @@
         }
 
         .mock-msg.user {
-            background: rgba(37, 99, 235, 0.06);
-            border: 1px solid rgba(37, 99, 235, 0.1);
+            background: rgba(56, 189, 248, 0.06);
+            border: 1px solid rgba(56, 189, 248, 0.1);
             align-self: flex-end;
             color: var(--accent-blue);
         }
@@ -495,18 +495,18 @@
         }
 
         .mock-msg.ai.purple {
-            background: rgba(124, 58, 237, 0.03);
-            border: 1px solid rgba(124, 58, 237, 0.1);
+            background: rgba(251, 113, 133, 0.03);
+            border: 1px solid rgba(251, 113, 133, 0.1);
         }
 
         .mock-msg.ai.green {
-            background: rgba(5, 150, 105, 0.03);
-            border: 1px solid rgba(5, 150, 105, 0.1);
+            background: rgba(52, 211, 153, 0.03);
+            border: 1px solid rgba(52, 211, 153, 0.1);
         }
 
         .mock-msg.user.green {
-            background: rgba(5, 150, 105, 0.06);
-            border: 1px solid rgba(5, 150, 105, 0.1);
+            background: rgba(52, 211, 153, 0.06);
+            border: 1px solid rgba(52, 211, 153, 0.1);
             color: var(--accent-green);
         }
 
@@ -532,14 +532,6 @@
             border: 1px solid var(--border);
             border-radius: var(--radius);
             padding: 32px;
-            transition: all 0.3s ease;
-        }
-
-        .feature-card:hover {
-            background: var(--bg-card-hover);
-            border-color: var(--border-hover);
-            transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
         }
 
         .feature-card .icon {
@@ -626,19 +618,19 @@
 
         .step-number.blue {
             color: var(--accent-blue);
-            border-color: rgba(37, 99, 235, 0.2);
+            border-color: rgba(56, 189, 248, 0.2);
             background: var(--accent-blue-glow);
         }
 
         .step-number.purple {
             color: var(--accent-purple);
-            border-color: rgba(124, 58, 237, 0.2);
+            border-color: rgba(251, 113, 133, 0.2);
             background: var(--accent-purple-glow);
         }
 
         .step-number.green {
             color: var(--accent-green);
-            border-color: rgba(5, 150, 105, 0.2);
+            border-color: rgba(52, 211, 153, 0.2);
             background: var(--accent-green-glow);
         }
 
@@ -970,7 +962,7 @@
                     <p>SciDraft — AIと対話しながら全セクションを執筆</p>
                 </div>
                 <div class="stat-item fade-in">
-                    <h3>あらゆる申請書に対応</h3>
+                    <h3>申請書を丸ごと執筆</h3>
                     <p>SciGrant — 募集要項と申請書テンプレートから申請書ドラフトを執筆</p>
                 </div>
             </div>
@@ -1185,7 +1177,7 @@
                 </a>
                 <a href="https://note.com/daichi_konno/n/ncc0d5b3f9457" target="_blank" class="article-card">
                     <div class="card-label green">SciGrant</div>
-                    <h3>研究申請書執筆AI「SciGrant」を使って申請書を書こう！</h3>
+                    <h3>研究計画書ドラフト執筆AI「SciGrant」の使い方</h3>
                     <p>募集要項とテンプレートをアップロードするだけで申請書ドラフトを執筆。<br>SciGrantへのアクセスリンク・利用方法は<br>こちらの記事に記載しています。</p>
                     <span class="card-link">記事を読む →</span>
                 </a>
@@ -1202,7 +1194,7 @@
                 誰もが論文を読み書きできる世界へ
             </blockquote>
             <p class="vision-author">
-                — <strong>紺野大地</strong>（Paper Interpreter & SciDraft & SciGrant 製作者）<br>医師・神経科学者
+                — <strong>紺野大地</strong>（Paper Interpreter/SciDraft/SciGrant 製作者）<br>医師・神経科学者
             </p>
         </div>
     </section>
@@ -1219,7 +1211,7 @@
                         東京大学医学部卒。東大医学部附属病院老年病科医師、池谷裕二研究室（東京大学）薬学部研究員。株式会社Neuroad Founder/CEO。専門は脳、人工知能、老化。2つのライフテーマがあり、1つは脳AI融合を通じた人間がより幸せに生きる方法の探究。もう1つは、生成AIの活用による科学研究そのものの加速。論文解説AI「Paper Interpreter」、論文執筆AI「SciDraft」、研究申請書執筆AI「SciGrant」を開発・公開。
                     </p>
                     <p>
-                        著書<a href="https://www.amazon.co.jp/dp/4065020522" target="_blank" style="color: var(--accent-blue); text-decoration: none; font-weight: 500;">『脳と人工知能をつないだら、人間の能力はどこまで拡張できるのか』</a>（講談社）はNewton誌<a href="https://www.newtonpress.co.jp/newton/back/bk_2024/bk_202402.html" target="_blank" style="color: var(--accent-blue); text-decoration: none; font-weight: 500;">「永久保存版 科学の名著」</a>および理化学研究所<a href="https://kagakudo100.jp/lineup-masterpiece" target="_blank" style="color: var(--accent-blue); text-decoration: none; font-weight: 500;">「科学道100冊 傑作選」</a>に選出。Xフォロワー4.6万人超。
+                        著書<a href="https://www.amazon.co.jp/dp/4065020522" target="_blank" style="color: var(--accent-blue); text-decoration: none; font-weight: 500;">『脳と人工知能をつないだら、人間の能力はどこまで拡張できるのか』</a>（講談社）はNewton誌<a href="https://www.newtonpress.co.jp/newton/back/bk_2024/bk_202402.html" target="_blank" style="color: var(--accent-blue); text-decoration: none; font-weight: 500;">「永久保存版 科学の名著」</a>および理化学研究所<a href="https://kagakudo100.jp/lineup-masterpiece" target="_blank" style="color: var(--accent-blue); text-decoration: none; font-weight: 500;">「科学道100冊 傑作選」</a>に選出。Xフォロワー5万人超。
                     </p>
                     <div class="about-links">
                         <a href="https://x.com/daaborochan" target="_blank">𝕏 Twitter</a>
