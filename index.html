@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paper Interpreter & SciDraft — AI for Science by Daichi Konno</title>
-    <meta name="description" content="論文解説AI「Paper Interpreter」と論文ドラフト執筆AI「SciDraft」。誰もが論文を読め、誰もが論文を書ける世界へ。">
+    <title>Paper Interpreter & SciDraft & SciGrant — AI for Science by Daichi Konno</title>
+    <meta name="description" content="論文解説AI「Paper Interpreter」、論文執筆AI「SciDraft」、研究申請書執筆AI「SciGrant」。誰もが論文を読み書きでき、誰もが研究費を獲得できる世界へ。">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://daichikonno.github.io/ai-for-science/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="AI for Science by Daichi Konno">
-    <meta property="og:title" content="Paper Interpreter & SciDraft — AI for Science by Daichi Konno">
-    <meta property="og:description" content="論文解説AI「Paper Interpreter」と論文ドラフト執筆AI「SciDraft」。誰もが論文を読め、誰もが論文を書ける世界へ。">
+    <meta property="og:title" content="Paper Interpreter & SciDraft & SciGrant — AI for Science by Daichi Konno">
+    <meta property="og:description" content="論文解説AI「Paper Interpreter」、論文執筆AI「SciDraft」、研究申請書執筆AI「SciGrant」。誰もが論文を読み書きでき、誰もが研究費を獲得できる世界へ。">
     <meta property="og:url" content="https://daichikonno.github.io/ai-for-science/">
     <meta property="og:image" content="https://daichikonno.github.io/ai-for-science/pi-screenshot.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Paper Interpreter & SciDraft — AI for Science by Daichi Konno">
-    <meta name="twitter:description" content="論文解説AI「Paper Interpreter」と論文ドラフト執筆AI「SciDraft」。誰もが論文を読め、誰もが論文を書ける世界へ。">
+    <meta name="twitter:title" content="Paper Interpreter & SciDraft & SciGrant — AI for Science by Daichi Konno">
+    <meta name="twitter:description" content="論文解説AI「Paper Interpreter」、論文執筆AI「SciDraft」、研究申請書執筆AI「SciGrant」。誰もが論文を読み書きでき、誰もが研究費を獲得できる世界へ。">
     <meta name="twitter:image" content="https://daichikonno.github.io/ai-for-science/pi-screenshot.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -285,6 +285,17 @@
             transform: translateY(-2px);
         }
 
+        .btn-tertiary {
+            background: linear-gradient(135deg, #059669, #10b981);
+            color: #fff;
+            box-shadow: 0 4px 16px rgba(5, 150, 105, 0.25);
+        }
+
+        .btn-tertiary:hover {
+            box-shadow: 0 6px 24px rgba(5, 150, 105, 0.35);
+            transform: translateY(-2px);
+        }
+
         .btn-outline {
             background: transparent;
             color: var(--text-primary);
@@ -384,6 +395,12 @@
             border: 1px solid rgba(124, 58, 237, 0.12);
         }
 
+        .product-icon.green {
+            background: var(--accent-green-glow);
+            border: 1px solid rgba(5, 150, 105, 0.12);
+            font-size: 1.6rem;
+        }
+
         .pricing-badge {
             display: inline-flex;
             align-items: center;
@@ -408,6 +425,12 @@
             border: 1px solid rgba(124, 58, 237, 0.15);
         }
 
+        .pricing-badge.paid-green {
+            background: rgba(5, 150, 105, 0.08);
+            color: var(--accent-green);
+            border: 1px solid rgba(5, 150, 105, 0.15);
+        }
+
         .pricing-note {
             margin-top: 16px;
             padding: 12px 16px;
@@ -423,6 +446,10 @@
             color: var(--accent-purple);
             text-decoration: none;
             font-weight: 600;
+        }
+
+        .pricing-note.green a {
+            color: var(--accent-green);
         }
 
         .pricing-note a:hover {
@@ -470,6 +497,17 @@
         .mock-msg.ai.purple {
             background: rgba(124, 58, 237, 0.03);
             border: 1px solid rgba(124, 58, 237, 0.1);
+        }
+
+        .mock-msg.ai.green {
+            background: rgba(5, 150, 105, 0.03);
+            border: 1px solid rgba(5, 150, 105, 0.1);
+        }
+
+        .mock-msg.user.green {
+            background: rgba(5, 150, 105, 0.06);
+            border: 1px solid rgba(5, 150, 105, 0.1);
+            color: var(--accent-green);
         }
 
         .mock-msg .label {
@@ -624,7 +662,7 @@
 
         .articles-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 32px;
             margin-top: 48px;
         }
@@ -656,6 +694,7 @@
 
         .article-card .card-label.blue { color: var(--accent-blue); }
         .article-card .card-label.purple { color: var(--accent-purple); }
+        .article-card .card-label.green { color: var(--accent-green); }
 
         .article-card h3 {
             font-size: 1.15rem;
@@ -875,6 +914,7 @@
             <ul class="nav-links">
                 <li><a href="#paper-interpreter">Paper Interpreter</a></li>
                 <li><a href="#scidraft">SciDraft</a></li>
+                <li><a href="#scigrant">SciGrant</a></li>
                 <li><a href="#workflow">使い方</a></li>
                 <li><a href="#articles">note記事</a></li>
                 <li><a href="#about">開発者</a></li>
@@ -893,11 +933,11 @@
                 </div>
                 <h1 class="hero-title">
                     <span class="gradient-text">科学を加速する</span><br>
-                    2つのAI
+                    3つのAI
                 </h1>
                 <p class="hero-subtitle">
-                    論文解説AI「Paper Interpreter」と論文執筆AI「SciDraft」が、<br>
-                    あなたの研究の生産性を劇的に向上させます。
+                    論文解説AI「Paper Interpreter」、論文執筆AI「SciDraft」、<br>
+                    研究申請書執筆AI「SciGrant」が、あなたの研究の生産性を劇的に向上させます。
                 </p>
                 <div class="hero-cta">
                     <a href="https://chatgpt.com/g/g-hxDOCBQrs-paper-interpreter-japanese" target="_blank" class="btn btn-primary">
@@ -907,6 +947,10 @@
                     <a href="https://note.com/daichi_konno/n/nc941e5eacfb5" target="_blank" class="btn btn-secondary">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
                         SciDraft の詳細を見る
+                    </a>
+                    <a href="https://note.com/daichi_konno/n/ncc0d5b3f9457" target="_blank" class="btn btn-tertiary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+                        SciGrant の詳細を見る
                     </a>
                 </div>
             </div>
@@ -926,8 +970,8 @@
                     <p>SciDraft — AIと対話しながら全セクションを執筆</p>
                 </div>
                 <div class="stat-item fade-in">
-                    <h3>読解 × 執筆</h3>
-                    <p>2つのAIで論文の入口と出口を支援</p>
+                    <h3>あらゆる申請書に対応</h3>
+                    <p>SciGrant — 募集要項と申請書テンプレートから申請書ドラフトを執筆</p>
                 </div>
             </div>
         </div>
@@ -1025,13 +1069,76 @@
         </div>
     </section>
 
+    <!-- SciGrant -->
+    <section id="scigrant" class="product-section">
+        <div class="container">
+            <div class="product-header fade-in">
+                <div>
+                    <div class="product-icon green">📋</div>
+                    <div class="section-label" style="color: var(--accent-green);">SciGrant <span class="pricing-badge paid-green">有料</span></div>
+                    <h2 class="section-title">研究アイデアを、<br>研究申請書ドラフトに。</h2>
+                    <p class="section-desc">
+                        募集要項と申請書テンプレートをアップロードするだけで、研究申請書ドラフトを対話形式で完成。<br>
+                        科研費・学振・JST・CREST・さきがけ・ムーンショット・AMED・NEDO・財団系・学内助成・国際グラントなど、あらゆる制度に対応します。
+                    </p>
+                    <div class="pricing-note green">
+                        SciGrantは有料ツールです。ご利用方法・アクセスリンクは<a href="https://note.com/daichi_konno/n/ncc0d5b3f9457" target="_blank">こちらのnote記事</a>に記載しています。
+                    </div>
+                    <div style="margin-top: 24px;">
+                        <a href="https://note.com/daichi_konno/n/ncc0d5b3f9457" target="_blank" class="btn btn-tertiary">
+                            note記事で詳細を見る →
+                        </a>
+                    </div>
+                </div>
+                <div class="product-visual">
+                    <div class="mock-chat">
+                        <div class="mock-msg user green">
+                            <div class="label">User</div>
+                            募集要項と申請書テンプレートをアップロードしました。
+                        </div>
+                        <div class="mock-msg ai green">
+                            <div class="label">SciGrant</div>
+                            ありがとうございます。募集要項（p.4）と申請書テンプレートを確認しました。<br>まず「研究目的・内容」から執筆を始めます。研究の核となるアイデアを教えてください。
+                        </div>
+                        <div class="mock-msg user green">
+                            <div class="label">User</div>
+                            脳とAIの融合により、記憶機能の拡張を実現する研究です。
+                        </div>
+                        <div class="mock-msg ai green">
+                            <div class="label">SciGrant</div>
+                            研究目的・内容のドラフトを生成します（テンプレートp.2、文字数制限：2,000字）。<br><br>本研究は脳とAIを融合させ……（続く）
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-grid fade-in">
+                <div class="feature-card">
+                    <div class="icon green">📂</div>
+                    <h3>あらゆる研究費に対応</h3>
+                    <p>募集要項と申請書テンプレートをアップロードするだけで、科研費・学振・AMED・財団系などあらゆる制度に対応します。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon green">💬</div>
+                    <h3>対話型ドラフト執筆</h3>
+                    <p>1項目ずつ人間のフィードバックを反映しながら、AIと協力して申請書ドラフトを書き上げます。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon green">📑</div>
+                    <h3>根拠資料を常に明示</h3>
+                    <p>「テンプレートのこの項目」「募集要項のp.◯」など、出力の根拠を常に明示。ハルシネーションを最小化します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Workflow -->
     <section id="workflow" class="section workflow">
         <div class="container">
             <div style="text-align: center;" class="fade-in">
                 <div class="section-label" style="color: var(--accent-green);">WORKFLOW</div>
                 <h2 class="section-title">3ステップで始められます</h2>
-                <p class="section-desc" style="margin: 0 auto;">どちらもChatGPT上で動作するGPTsです。</p>
+                <p class="section-desc" style="margin: 0 auto;">どのツールもChatGPT上で動作するGPTsです。</p>
             </div>
 
             <div class="workflow-steps fade-in">
@@ -1043,12 +1150,12 @@
                 <div class="workflow-step">
                     <div class="step-number purple">2</div>
                     <h3>ファイルをアップロード</h3>
-                    <p>論文PDFや研究計画書・スライドをドラッグ&ドロップするだけで、すぐに回答が始まります。</p>
+                    <p>論文PDF、研究計画書、募集要項などをドラッグ&ドロップするだけで、すぐに回答が始まります。</p>
                 </div>
                 <div class="workflow-step">
                     <div class="step-number green">3</div>
-                    <h3>論文解説 / 執筆</h3>
-                    <p>Paper Interpreterは論文を解説し、SciDraftは論文ドラフトを執筆します。</p>
+                    <h3>解説 / 執筆</h3>
+                    <p>Paper Interpreterは論文を解説し、SciDraftは論文ドラフトを、SciGrantは研究申請書ドラフトを執筆します。</p>
                 </div>
             </div>
         </div>
@@ -1076,6 +1183,12 @@
                     <p>AIとの対話を通じて論文ドラフトを作成。<br>SciDraftへのアクセスリンク・利用方法は<br>こちらの記事に記載しています。</p>
                     <span class="card-link">記事を読む →</span>
                 </a>
+                <a href="https://note.com/daichi_konno/n/ncc0d5b3f9457" target="_blank" class="article-card">
+                    <div class="card-label green">SciGrant</div>
+                    <h3>研究申請書執筆AI「SciGrant」を使って申請書を書こう！</h3>
+                    <p>募集要項とテンプレートをアップロードするだけで申請書ドラフトを執筆。<br>SciGrantへのアクセスリンク・利用方法は<br>こちらの記事に記載しています。</p>
+                    <span class="card-link">記事を読む →</span>
+                </a>
             </div>
         </div>
     </section>
@@ -1089,7 +1202,7 @@
                 誰もが論文を読み書きできる世界へ
             </blockquote>
             <p class="vision-author">
-                — <strong>紺野大地</strong>（Paper Interpreter & SciDraft 製作者）<br>医師・神経科学者
+                — <strong>紺野大地</strong>（Paper Interpreter & SciDraft & SciGrant 製作者）<br>医師・神経科学者
             </p>
         </div>
     </section>
@@ -1103,7 +1216,7 @@
                     <h3>紺野大地（Daichi Konno）</h3>
                     <p class="title">MD, PhD — 医師・神経科学者</p>
                     <p>
-                        東京大学医学部卒。東大医学部附属病院老年病科医師、池谷裕二研究室（東京大学）薬学部研究員。株式会社Neuroad Founder/CEO。専門は脳、人工知能、老化。2つのライフテーマがあり、1つは脳AI融合を通じた人間がより幸せに生きる方法の探究。もう1つは、生成AIの活用による科学研究そのものの加速。
+                        東京大学医学部卒。東大医学部附属病院老年病科医師、池谷裕二研究室（東京大学）薬学部研究員。株式会社Neuroad Founder/CEO。専門は脳、人工知能、老化。2つのライフテーマがあり、1つは脳AI融合を通じた人間がより幸せに生きる方法の探究。もう1つは、生成AIの活用による科学研究そのものの加速。論文解説AI「Paper Interpreter」、論文執筆AI「SciDraft」、研究申請書執筆AI「SciGrant」を開発・公開。
                     </p>
                     <p>
                         著書<a href="https://www.amazon.co.jp/dp/4065020522" target="_blank" style="color: var(--accent-blue); text-decoration: none; font-weight: 500;">『脳と人工知能をつないだら、人間の能力はどこまで拡張できるのか』</a>（講談社）はNewton誌<a href="https://www.newtonpress.co.jp/newton/back/bk_2024/bk_202402.html" target="_blank" style="color: var(--accent-blue); text-decoration: none; font-weight: 500;">「永久保存版 科学の名著」</a>および理化学研究所<a href="https://kagakudo100.jp/lineup-masterpiece" target="_blank" style="color: var(--accent-blue); text-decoration: none; font-weight: 500;">「科学道100冊 傑作選」</a>に選出。Xフォロワー4.6万人超。
@@ -1124,7 +1237,7 @@
             <h2 class="cta-title">今すぐ、AIと共に研究を加速しよう</h2>
             <p class="cta-desc">
                 Paper Interpreterは無料で今すぐ使えます。<br>
-                SciDraftの利用方法はnote記事をご確認ください。
+                SciDraft・SciGrantの利用方法はnote記事をご確認ください。
             </p>
             <div class="cta-buttons">
                 <a href="https://chatgpt.com/g/g-hxDOCBQrs-paper-interpreter-japanese" target="_blank" class="btn btn-primary">
@@ -1134,6 +1247,10 @@
                 <a href="https://note.com/daichi_konno/n/nc941e5eacfb5" target="_blank" class="btn btn-secondary">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
                     SciDraft（note記事へ）
+                </a>
+                <a href="https://note.com/daichi_konno/n/ncc0d5b3f9457" target="_blank" class="btn btn-tertiary">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                    SciGrant（note記事へ）
                 </a>
             </div>
         </div>
