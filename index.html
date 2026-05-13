@@ -330,12 +330,15 @@
         .stat-item h3 {
             font-size: clamp(1.8rem, 3vw, 2.5rem);
             font-weight: 800;
-            background: var(--gradient-hero);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             margin-bottom: 8px;
         }
+
+        .stat-item.sky h3   { background: linear-gradient(135deg, #38bdf8, #7dd3fc); -webkit-background-clip: text; background-clip: text; }
+        .stat-item.coral h3 { background: linear-gradient(135deg, #fb7185, #fda4af); -webkit-background-clip: text; background-clip: text; }
+        .stat-item.mint h3  { background: linear-gradient(135deg, #34d399, #6ee7b7); -webkit-background-clip: text; background-clip: text; }
 
         .stat-item p {
             color: var(--text-muted);
@@ -928,8 +931,8 @@
                     3つのAI
                 </h1>
                 <p class="hero-subtitle">
-                    論文解説AI「Paper Interpreter」、論文執筆AI「SciDraft」、<br>
-                    研究申請書執筆AI「SciGrant」が、あなたの研究の生産性を劇的に向上させます。
+                    Paper Interpreter、SciDraft、SciGrantの3つのAIが、<br>
+                    あなたの研究の生産性を劇的に向上させます。
                 </p>
                 <div class="hero-cta">
                     <a href="https://chatgpt.com/g/g-hxDOCBQrs-paper-interpreter-japanese" target="_blank" class="btn btn-primary">
@@ -953,17 +956,17 @@
     <section class="stats">
         <div class="container">
             <div class="stats-grid">
-                <div class="stat-item fade-in">
+                <div class="stat-item sky fade-in">
                     <h3>日本1位 / 世界6位</h3>
                     <p>Paper Interpreter — GPTs全世界ランキング</p>
                 </div>
-                <div class="stat-item fade-in">
+                <div class="stat-item coral fade-in">
                     <h3>論文を丸ごと執筆</h3>
                     <p>SciDraft — AIと対話しながら全セクションを執筆</p>
                 </div>
-                <div class="stat-item fade-in">
+                <div class="stat-item mint fade-in">
                     <h3>申請書を丸ごと執筆</h3>
-                    <p>SciGrant — 募集要項と申請書テンプレートから申請書ドラフトを執筆</p>
+                    <p>SciGrant — あらゆる研究費の申請書ドラフトを執筆</p>
                 </div>
             </div>
         </div>
