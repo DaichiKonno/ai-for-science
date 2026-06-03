@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="AI for Science">
+  <defs>
+    <clipPath id="icon-clip">
+      <rect x="38" y="38" width="436" height="436" rx="98"/>
+    </clipPath>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#ffffff"/>
+  <g clip-path="url(#icon-clip)">
+    <rect x="38" y="38" width="436" height="436" fill="#ffffff"/>
+    <circle cx="256" cy="142" r="214" fill="#38bdf8" opacity="0.96"/>
+    <circle cx="132" cy="366" r="214" fill="#fb7185" opacity="0.92"/>
+    <circle cx="380" cy="366" r="214" fill="#34d399" opacity="0.92"/>
+    <circle cx="256" cy="256" r="106" fill="#ffffff" opacity="0.12"/>
+  </g>
+  <path d="M106 339 174 156h60l68 183h-51l-12-39h-87l-12 39h-34Zm62-83h57l-28-91h-1l-28 91Zm174 83V156h52v183h-52Z" fill="#ffffff"/>
+</svg>
